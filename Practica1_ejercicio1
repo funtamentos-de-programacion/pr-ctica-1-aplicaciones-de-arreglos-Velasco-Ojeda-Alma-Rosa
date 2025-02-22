@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    // Definimos arreglos de diferentes tipos de datos 
+    int arr_int[5] = {10, 20, 30, 40, 50};
+    char arr_char[5] = {'a', 'b', 'c', 'd', 'e'};
+    double arr_double[5] = {1.1, 2.2, 3.3, 4.4, 5.5};
+
+    //Recorre los arreglos
+    printf("Direcciones de memoria para el arreglo de enteros:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Direccion de arr_int[%d]: %p\n", i, (void*)&arr_int[i]);
+    }
+
+    printf("\nDirecciones de memoria para el arreglo de caracteres:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Direccion de arr_char[%d]: %p\n", i, (void*)&arr_char[i]);
+    }
+
+    printf("\nDirecciones de memoria para el arreglo de dobles:\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Direccion de arr_double[%d]: %p\n", i, (void*)&arr_double[i]);
+    }
+    return 0;
+}
